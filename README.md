@@ -59,4 +59,3 @@ src/
 ## AI Development
 
 This project includes an [`AI_RULES.md`](AI_RULES.md) file to guide AI assistants in maintaining code quality and consistency.
-# shadcn-next-starter
