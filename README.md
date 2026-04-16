@@ -32,14 +32,23 @@ src/
 
 1. **Clone and Install**:
    ```bash
-   cd new
+   git clone <repository-url>
+   cd shadcn-next-starter
    npm install
    ```
 
-2. **Database Setup**:
+2. **Environment Setup**:
+   Copy the example environment file and fill in the values:
+   ```bash
+   cp .env.example .env
+   ```
+   *Note: `AUTH_SECRET` can be generated with `npx auth secret`.*
+
+3. **Database Setup**:
    Configure your `DATABASE_URL` in `.env` and run:
    ```bash
    npx prisma generate
+   npx prisma db push
    ```
 
 3. **Run Development Server**:
